@@ -145,29 +145,29 @@ Skills Demonstrated
 
 This project highlights several technical and analytical skills:
 
-Data Analysis
+-Data Analysis
 
-SQL data investigation
+-SQL data investigation
 
-anomaly detection
+-anomaly detection
 
-root cause identification
+-root cause identification
 
-Data Conversion
+-Data Conversion
 
-legacy data structure analysis
+-legacy data structure analysis
 
-referential integrity validation
+-referential integrity validation
 
-pre-migration data validation
+-pre-migration data validation
 
-Data Quality
+-Data Quality
 
-identification of incomplete or inconsistent records
+-identification of incomplete or inconsistent records
 
-validation of relational dependencies
+-validation of relational dependencies
 
-risk identification before deployment
+-risk identification before deployment
 
 Real-World Relevance
 
