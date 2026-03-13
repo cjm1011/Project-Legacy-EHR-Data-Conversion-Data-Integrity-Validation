@@ -1,4 +1,4 @@
---
+-- Split full name
 
 SELECT
 patient_id,
@@ -8,3 +8,7 @@ TO_DATE(dob,'YYYY/MM/DD') AS birth_date,
 gender,
 phone
 FROM patients_legacy;
+
+--This ensures consistent phone number formatting for downstream systems.
+UPDATE patients_legacy
+SET phone = REGEXP_REPLACE(phone, '[^0-9]', '', 'g');
