@@ -1,5 +1,7 @@
--- Finds out patients with missing phone numbers
-SELECT COUNT(*) AS missing_phone
+-- Finds out patients with missing phone numbers and what percentage
+SELECT
+COUNT(*) AS missing_phone_records,
+ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM patients_legacy),2) AS percent_missing
 FROM patients_legacy
 WHERE phone IS NULL;
 
