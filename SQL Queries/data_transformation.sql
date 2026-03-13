@@ -12,3 +12,9 @@ FROM patients_legacy;
 --This ensures consistent phone number formatting for downstream systems.
 UPDATE patients_legacy
 SET phone = REGEXP_REPLACE(phone, '[^0-9]', '', 'g');
+
+
+-- Handles missing phone number Values
+UPDATE patients_legacy
+SET phone = '0000000000'
+WHERE phone IS NULL;
